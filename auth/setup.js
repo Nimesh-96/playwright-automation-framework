@@ -1,3 +1,8 @@
+import { chromium, expect } from '@playwright/test';
+
+import { LoginPage } from '../pages/LoginPage';
+import { users } from '../test-data/users';
+
 async function globalSetup() {
 
     const browser = await chromium.launch();
