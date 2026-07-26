@@ -17,7 +17,23 @@ async function globalSetup() {
         users.validUser.username,
         users.validUser.password
     );
+    console.log(
+        "Username:",
+        users.validUser.username
+    );
 
+    console.log(
+        "Password:",
+        users.validUser.password
+    );
+
+
+    await page.waitForTimeout(3000);
+
+    console.log(
+        "After login URL:",
+        page.url()
+    );
 
     console.log('Current URL:', page.url());
 
