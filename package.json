@@ -1,0 +1,17 @@
+{
+  "name": "playwright-login-script",
+  "version": "1.0.0",
+  "description": "Script to visit a login page and click the sign-in button using Playwright",
+  "main": "login.js",
+  "scripts": {
+    "start": "node login.js",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.47.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.0"
+  }
+}
